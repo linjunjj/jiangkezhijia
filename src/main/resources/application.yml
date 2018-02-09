@@ -2,7 +2,7 @@ server:
   port: 8080
 spring:
   application:
-    name: YIIU
+    name: yiiu
     index: 1
   resources:
     static-locations:
@@ -15,16 +15,16 @@ spring:
     cache: false
     settings:
       template_exception_handler: rethrow
-  datasource:
-    driver-class-name: org.sqlite.JDBC
-    url: jdbc:sqlite:./yiiu.sqlite
 #  datasource:
-#    url: jdbc:mysql://localhost/yiiu?useSSL=false&characterEncoding=utf8
-#    username: root
-#    password: 123123
+#    driver-class-name: org.sqlite.JDBC
+#    url: jdbc:sqlite:./yiiu.sqlite
+  datasource:
+    url: jdbc:mysql://localhost/yiiu?useSSL=false&characterEncoding=utf8
+    username: root
+    password: linjun0928
   jpa:
-#    database: mysql
-    database-platform: co.yiiu.core.dialect.SQLiteDialect
+    database: mysql
+#    database-platform: co.yiiu.core.dialect.SQLiteDialect
     show-sql: true
     hibernate:
       ddl-auto: update
@@ -39,8 +39,8 @@ spring:
       enabled: false
   mail:
     host: smtp.qq.com
-    username: xxoo@qq.com
-    password: # 这里的密码是QQ邮箱的授权码
+    username: 454760905@qq.com
+    password: dnklysdxpnbcbibj
     port: 465
     properties:
       mail.smtp.auth: true
@@ -66,8 +66,8 @@ security:
       login-path: /github_login
 
 site:
-  name: YIIU
-  intro: <h5>属于Java语言的bbs</h5><p>在这里，您可以提问，回答，分享，诉说，这是个属于Java程序员的社区，欢迎您的加入！</p>
+  name: 江科之家
+  intro: <h5>江科之家</h5><p>在这里，您可以提问，回答，分享，诉说，这是个属于江科人自己的社区，欢迎您的加入！</p>
   baseUrl: http://localhost:8080/ # 不要忘了后面的 '/'
   staticUrl: http://localhost:8080/static/images/upload/
   pageSize: 20
@@ -77,8 +77,8 @@ site:
   attempts: 5
   attemptsWaitTime: 15
   maxCreateTopic: 10
-  createTopicScore: -10  # 创建主题变化的积分
-  createReplyScore : -5  # 创建回复变化的积分
+  createTopicScore: -1  # 创建主题创建回复变化的积分变化的积分
+  createReplyScore : -1  #
   userUploadSpaceSize: 50 # 单位MB
   score: 2000 # 用户注册后初始积分
   loginPoints: 2 # 登录点，最多2个位置登录，第三个登录点会覆盖第一个

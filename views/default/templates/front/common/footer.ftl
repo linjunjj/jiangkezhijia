@@ -3,6 +3,7 @@
 	<br>
 	<p>
 		<a href="https://github.com/yiiu-co/yiiu" target="_blank">源码地址</a>&nbsp;|&nbsp;
+        <a href="https://github.com/yiiu-co/yiiu" target="_blank">关于我们</a>&nbsp;|&nbsp;
         <a href="https://github.com/linjunjj" target="_blank">关于作者</a>&nbsp;|&nbsp;
         <a href="https://github.com/yiiu-co/yiiu" target="_blank">App下载</a>&nbsp;|&nbsp;
 		<a href="https://www.jxut.edu.cn/" target="_blank">江西科技学院</a>
